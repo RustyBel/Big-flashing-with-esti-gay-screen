@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    animation: flashing .01ms linear infinite;
+}  
+pre{
+    font-size: 6em;
+    animation: rainbow 1s linear infinite;
+}
+@keyframes flashing {
+    0%{background: white;}
+    50%{background: black;}
+}
+@keyframes rainbow {
+    0%{color: red;}
+    12.25%{color: orange;}
+    24.5%{color: yellow;}
+    36.75%{color: lime;}
+    50%{color: cyan;}
+    62.25%{color: blue;}
+    74.5%{color: purple;}
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    pre {
+        font-size: 7em;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    pre {
+        font-size: 8em;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    pre {
+        font-size: 10em;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1555px) {
+    pre {
+        font-size: 12em;
+    }
+}
+@media (min-width: 1556px) {
+    pre {
+        font-size: 15em;
+    }
+}
